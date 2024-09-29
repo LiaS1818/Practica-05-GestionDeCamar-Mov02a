@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8BC34A"
+        android:orientation="vertical">
+
+        <!-- Agregar la Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Título de la Actividad"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1"
+            android:textAlignment="center"
+            android:textColor="#9C27B0"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEscanear"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#2A652C"
+            android:text="@string/scanear" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCodigo"
+                android:layout_width="200dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="15dp"
+                android:ems="10"
+                android:hint="@string/res"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnBuscar"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:backgroundTint="#8BC34A"
+                app:srcCompat="@drawable/baseline_manage_search_24" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="15dp"
+            android:ems="10"
+            android:hint="@string/capturar"
+            android:inputType="text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCapturar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2A652C"
+                android:text="@string/capturar"
+                android:textColorHighlight="#673AB7"
+                android:textColorLink="#673AB7" />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2A652C"
+                android:text="@string/limpiar" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCodigo"
+            android:layout_width="293dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="298dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

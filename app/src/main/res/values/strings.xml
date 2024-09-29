@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ejemplo01 Segundo Parcial 250920224</string>
+    <string name="titulo">Gestión de cámara</string>
+    <string name="menu1">Lector Barras/QR</string>
+    <string name="menu2">Tomar foto</string>
+
+    <string name="titulo1">Lector de barra y QR</string>
+    <string name="scanear">Escanear</string>
+    <string name="res">Código Leido</string>
+    <string name="descripcion">Descripción</string>
+    <string name="capturar">Capturar descripción</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="titulo2">Tomar foto</string>
+    <string name="tomar">Tomar foto</string>
+    <string name="todo">TODO</string>
+</resources>
